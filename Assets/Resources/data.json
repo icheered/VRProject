@@ -1,0 +1,361 @@
+{
+    "machines": [
+        {
+            "machine_id": "m1",
+            "title": "Slicer"
+        },
+        {
+            "machine_id": "m2",
+            "title": "Gluer"
+        }
+    ],
+    "settings": [
+        {
+            "machine_id": "m1",
+            "setting_id": "s1",
+            "title": "Speed",
+            "min": 1,
+            "max": 10
+        },
+        {
+            "machine_id": "m1",
+            "setting_id": "s2",
+            "title": "Force",
+            "min": 1,
+            "max": 25
+        },
+        {
+            "machine_id": "m2",
+            "setting_id": "s3",
+            "title": "Feed rate",
+            "min": 2,
+            "max": 8
+        },
+        {
+            "machine_id": "m2",
+            "setting_id": "s4",
+            "title": "Temperature",
+            "min": 25,
+            "max": 250
+        },
+        {
+            "machine_id": "m2",
+            "setting_id": "s5",
+            "title": "Pressure",
+            "min": 20,
+            "max": 40
+        }
+    ],
+    "properties": [
+        {
+            "title": "Height",
+            "min": 0,
+            "max": 100
+        },
+        {
+            "title": "Width",
+            "min": 0,
+            "max": 100
+        },
+        {
+            "title": "Thickness",
+            "min": 0,
+            "max": 100
+        },
+        {
+            "title": "Smoothness",
+            "min": 0,
+            "max": 100
+        },
+        {
+            "title": "Warped",
+            "min": 0,
+            "max": 100
+        },
+        {
+            "title": "Bulge",
+            "min": 0,
+            "max": 100
+        }
+    ],
+    "covariance_matrix": [
+        [
+            0,
+            0,
+            1,
+            1,
+            1
+        ],
+        [
+            0,
+            1,
+            1,
+            1,
+            0
+        ],
+        [
+            1,
+            0,
+            1,
+            1,
+            1
+        ],
+        [
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
+        [
+            1,
+            1,
+            1,
+            0,
+            0
+        ],
+        [
+            1,
+            1,
+            0,
+            1,
+            0
+        ]
+    ],
+    "objects": [
+        {
+            "object_id": "o1",
+            "title": "First run",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 1
+                },
+                {
+                    "key": "s2",
+                    "value": 25
+                },
+                {
+                    "key": "s3",
+                    "value": 4
+                },
+                {
+                    "key": "s4",
+                    "value": 149
+                },
+                {
+                    "key": "s5",
+                    "value": 35
+                }
+            ]
+        },
+        {
+            "object_id": "o2",
+            "title": "Second",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 1
+                },
+                {
+                    "key": "s2",
+                    "value": 2
+                },
+                {
+                    "key": "s3",
+                    "value": 2
+                },
+                {
+                    "key": "s4",
+                    "value": 77
+                },
+                {
+                    "key": "s5",
+                    "value": 25
+                }
+            ]
+        },
+        {
+            "object_id": "o3",
+            "title": "Tres",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 1
+                },
+                {
+                    "key": "s2",
+                    "value": 16
+                },
+                {
+                    "key": "s3",
+                    "value": 6
+                },
+                {
+                    "key": "s4",
+                    "value": 211
+                },
+                {
+                    "key": "s5",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "object_id": "o4",
+            "title": "Vier",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 1
+                },
+                {
+                    "key": "s2",
+                    "value": 13
+                },
+                {
+                    "key": "s3",
+                    "value": 3
+                },
+                {
+                    "key": "s4",
+                    "value": 242
+                },
+                {
+                    "key": "s5",
+                    "value": 32
+                }
+            ]
+        },
+        {
+            "object_id": "o5",
+            "title": "Five",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 1
+                },
+                {
+                    "key": "s2",
+                    "value": 19
+                },
+                {
+                    "key": "s3",
+                    "value": 5
+                },
+                {
+                    "key": "s4",
+                    "value": 235
+                },
+                {
+                    "key": "s5",
+                    "value": 37
+                }
+            ]
+        },
+        {
+            "object_id": "o6",
+            "title": "Sechs",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 1
+                },
+                {
+                    "key": "s2",
+                    "value": 19
+                },
+                {
+                    "key": "s3",
+                    "value": 8
+                },
+                {
+                    "key": "s4",
+                    "value": 37
+                },
+                {
+                    "key": "s5",
+                    "value": 33
+                }
+            ]
+        },
+        {
+            "object_id": "o7",
+            "title": "Siete",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 10
+                },
+                {
+                    "key": "s2",
+                    "value": 4
+                },
+                {
+                    "key": "s3",
+                    "value": 5
+                },
+                {
+                    "key": "s4",
+                    "value": 130
+                },
+                {
+                    "key": "s5",
+                    "value": 22
+                }
+            ]
+        },
+        {
+            "object_id": "o8",
+            "title": "Ocho",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 8
+                },
+                {
+                    "key": "s2",
+                    "value": 24
+                },
+                {
+                    "key": "s3",
+                    "value": 6
+                },
+                {
+                    "key": "s4",
+                    "value": 236
+                },
+                {
+                    "key": "s5",
+                    "value": 29
+                }
+            ]
+        },
+        {
+            "object_id": "o9",
+            "title": "Nueve",
+            "settings": [
+                {
+                    "key": "s1",
+                    "value": 9
+                },
+                {
+                    "key": "s2",
+                    "value": 2
+                },
+                {
+                    "key": "s3",
+                    "value": 7
+                },
+                {
+                    "key": "s4",
+                    "value": 203
+                },
+                {
+                    "key": "s5",
+                    "value": 22
+                }
+            ]
+        }
+    ]
+}
