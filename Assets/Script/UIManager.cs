@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System;
 using TMPro;
 using System.Collections.Generic;
+using System.Linq;
 
 [Serializable]
 public class MachineInfo
@@ -111,6 +112,13 @@ public class UIManager : MonoBehaviour
         }
 
         Debug.Log("Updating sliders for " + objectData.title);
+        
+        // Log all settings
+        foreach (var setting in objectData.settings)
+        {
+            Debug.Log("Setting: " + setting.key + " = " + setting.value);
+        }
+        
         // Update each slider value based on the object settings
         foreach (var setting in objectData.settings)
         {
@@ -120,6 +128,7 @@ public class UIManager : MonoBehaviour
             {
                 GameObject sliderParent = sliderTransform.gameObject;
                 Transform sliderChildTransform = sliderParent.transform.Find("Slider");
+                Transform sliderValueTransform = sliderParent.transform.Find("Slidervalue");
                 if (sliderChildTransform != null)
                 {
                     Slider slider = sliderChildTransform.GetComponent<Slider>();
@@ -136,6 +145,22 @@ public class UIManager : MonoBehaviour
                 else
                 {
                     Debug.LogError("No child named 'Slider' found on the GameObject: " + sliderParent.name);
+                }
+                if(sliderValueTransform != null)
+                {
+                    TextMeshProUGUI sliderValue = sliderValueTransform.GetComponent<TextMeshProUGUI>();
+                    if (sliderValue != null)
+                    {
+                        sliderValue.text = setting.value.ToString();
+                    }
+                    else
+                    {
+                        Debug.LogError("No TextMeshProUGUI component found on the GameObject: " + sliderValueTransform.name);
+                    }
+                }
+                else
+                {
+                    Debug.LogError("No child named 'Slidervalue' found on the GameObject: " + sliderParent.name);
                 }
                 
             }

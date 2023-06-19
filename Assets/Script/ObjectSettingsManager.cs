@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System.Linq;
 
 public class ObjectSettingsManager : MonoBehaviour
 {
@@ -44,15 +45,16 @@ public class ObjectSettingsManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (UICanvas != null)
-        {
-            UICanvas.SetActive(true);
-        }
-
+        UICanvas.SetActive(true);
         Debug.Log("Clicked on " + objectData.title);
         StartCoroutine(UpdateSlidersNextFrame(objectData));
 
         Pickup();
+    }
+
+    private void OnMouseUp()
+    {
+       UICanvas.SetActive(false);
     }
 
     private IEnumerator UpdateSlidersNextFrame(ObjectData objectData)
@@ -89,7 +91,7 @@ public class ObjectSettingsManager : MonoBehaviour
             {
                 collider.enabled = false;  // Disable all colliders so the duplicate object does not have any collision
             }
-        }
+        } 
     }
 
     private void Drop()

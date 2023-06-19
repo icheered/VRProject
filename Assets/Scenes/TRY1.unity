@@ -2018,7 +2018,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767602459}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06fca5699ac650644bc48895d34bb414, type: 3}
   m_Name: 
@@ -2829,7 +2829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8dc1ade4b9c754e8563e19b079240a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectPrefab: {fileID: 8900337841424476937, guid: abfa6bace48cfa34fa197ebeb8e17cc9,
+  ObjectPrefab: {fileID: 4897938368960505625, guid: 100a3eaf047feaf43a67b3a0d75f2af8,
     type: 3}
   Objects: {fileID: 1231865663}
   UICanvas: {fileID: 1068019996}
