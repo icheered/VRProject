@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ObjectSettingsManager : MonoBehaviour
 {
@@ -13,10 +14,29 @@ public class ObjectSettingsManager : MonoBehaviour
 
     private string[] blendShapeNames = new string[] { "Height", "Width", "Thickness", "Smoothness", "Warped", "Bulge" };
 
+    public bool isHolding = false;
     private float distance = 2f;
-    private bool isHolding = false;
+    
     private Transform mainCameraTransform;
     private GameObject duplicateObject;
+
+    // Todo: Pick up item using activate and then allow sliders to be interacted with the trigger
+    public void VRActivate() {
+        Debug.Log("Activate");
+    }
+
+    public void VRActivateExit() {
+        Debug.Log("Activate Exit");
+    }
+    
+    public void VRSelect() {
+        Debug.Log("Select");
+    }
+
+    public void VRSelectExit() {
+        Debug.Log("Select exit");
+        UICanvas.SetActive(false);
+    }
 
     private void Start()
     {

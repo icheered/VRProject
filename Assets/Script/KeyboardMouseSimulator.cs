@@ -18,10 +18,6 @@ public class KeyboardMouseSimulator : MonoBehaviour
     private CharacterController characterController;
     private float yaw = 0.0f;     // Horizontal rotation for the character
     private float pitch = 0.0f;    // Vertical rotation for the character
-    private float handYaw = 0.0f;  // Horizontal rotation for the hand
-    private float handPitch = 0.0f; // Vertical rotation for the hand
-
-    private bool leftHandSelected = false;
 
     void Start()
     {
